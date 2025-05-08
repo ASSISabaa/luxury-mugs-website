@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Overview</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="image/logo.svg" />
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+        <div class="logo">
+            <img src="image/logo.svg" alt="MUGORA" />
+            <span>MUGORA Admin</span>
+          </div>
+          
+      <ul>
+        <li class="active">Dashboard</li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="orders.html">Orders</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <div class="top-bar">
+        <h1>📊 Dashboard Overview</h1>
+        <button onclick="toggleLanguage()">🌐 EN/AR</button>
+      </div>
+
+      <div class="overview-cards">
+        <div class="card">
+          <h3>Total Mugs</h3>
+          <p id="total-products">--</p>
+        </div>
+        <div class="card">
+          <h3>Total Orders</h3>
+          <p id="total-orders">--</p>
+        </div>
+        <div class="card">
+          <h3>Mugs Sold</h3>
+          <p id="mugs-sold">--</p>
+        </div>
+        <div class="card">
+          <h3>Total Revenue</h3>
+          <p id="total-revenue">$--</p>
+        </div>
+      </div>
+
+      <div class="chart-section">
+        <h2>Sales Overview</h2>
+        <canvas id="salesChart" width="400" height="150"></canvas>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/overview.js"></script>
+</body>
+</html>
